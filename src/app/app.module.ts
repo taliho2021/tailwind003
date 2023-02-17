@@ -23,6 +23,8 @@ import { DashComponent } from './dash/dash.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { HomeComponent } from './home/home.component';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { HomeComponent } from './home/home.component';
     Tailwind01Component,
     Tailwind02Component,
     DashComponent,
-    HomeComponent
+    HomeComponent,
+    DragDropComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { HomeComponent } from './home/home.component';
     MatIconModule,
     MatListModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
