@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-address',
@@ -8,8 +9,10 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class AddressComponent {
   addressForm = this.fb.group({
+    companyId: [''],
     company: null,
     firstName: [null, Validators.required],
+    middleName: [null],
     lastName: [null, Validators.required],
     address: [null, Validators.required],
     address2: null,

@@ -3,6 +3,12 @@ module.exports = {
   content: ["./src/**/*.{html,js, ts}"],
   theme: {
     extend: {},
+    container: {
+      center: true,
+    },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require('@tailwindcss/aspect-ratio'),
+  ],
 };

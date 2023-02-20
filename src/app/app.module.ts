@@ -1,30 +1,33 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddressComponent } from './address/address.component';
-import { MatInputModule } from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSelectModule } from '@angular/material/select';
-import { MatRadioModule } from '@angular/material/radio';
-import { MatCardModule } from '@angular/material/card';
-import { ReactiveFormsModule } from '@angular/forms';
-import { NavComponent } from './nav/nav.component';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
-import { Tailwind01Component } from './tailwind01/tailwind01.component';
-import { Tailwind02Component } from './tailwind02/tailwind02.component';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 import { DashComponent } from './dash/dash.component';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatMenuModule } from '@angular/material/menu';
-import { HomeComponent } from './home/home.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { HomeComponent } from './home/home.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { NavComponent } from './nav/nav.component';
+import { NgModule } from '@angular/core';
+import { PicturesComponent } from './pictures/pictures.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Tailwind01Component } from './tailwind01/tailwind01.component';
+import { Tailwind02Component } from './tailwind02/tailwind02.component';
+import { FlexFormComponent } from './flex-form/flex-form.component';
+import { GridFormComponent } from './grid-form/grid-form.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     Tailwind02Component,
     DashComponent,
     HomeComponent,
-    DragDropComponent
+    DragDropComponent,
+    PicturesComponent,
+    FlexFormComponent,
+    GridFormComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +60,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatListModule,
     MatGridListModule,
     MatMenuModule,
+    MatFormFieldModule,
+    MatIconModule,
     DragDropModule
   ],
   providers: [],
