@@ -28,6 +28,8 @@ import { PicturesComponent } from './pictures/pictures.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Tailwind01Component } from './tailwind01/tailwind01.component';
 import { Tailwind02Component } from './tailwind02/tailwind02.component';
+import { Child01Component } from './child01/child01.component';
+import { AiGridComponent } from './ai-grid/ai-grid.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { Tailwind02Component } from './tailwind02/tailwind02.component';
     DragDropComponent,
     PicturesComponent,
     FlexFormComponent,
-    GridFormComponent
+    GridFormComponent,
+    Child01Component,
+    AiGridComponent
   ],
   imports: [
     BrowserModule,
