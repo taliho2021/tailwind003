@@ -1,42 +1,42 @@
 <h1 class="text-3xl font-bold m-20 text-center">Grid Forms</h1>
 
 <form class="grid grid-cols-3 gap-4" [formGroup]="clientForm" (ngSubmit)="onSubmit()">
-  <div class=" m-8 p-12 bg-slate-100 border border-gray-400">
+  <div class=" m-8 p-12 bg-rose-100 border border-gray-400">
     <label for="clientCode" class="block text-sm font-medium text-gray-700">Client Code</label>
-    <input id="clientCode" type="text" formControlName="clientCode" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+    <input id="clientCode" type="text" formControlName="clientCode" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Client Code">
 
     <label for="clientName" class="block text-sm font-medium text-gray-700">Client Name</label>
-    <input id="clientName" type="text" formControlName="clientName" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+    <input id="clientName" type="text" formControlName="clientName" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Client Name">
 
     <div formGroupName="addressMail">
       <h2 class="text-2xl font-bold m-20 text-center">Mailing Address</h2>
 
       <label for="street1" class="block text-sm font-medium text-gray-700">Street Address</label>
-      <input id="street1" type="text" formControlName="street1" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <input id="street1" type="text" formControlName="street1" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Street Address">
 
-      <label for="altPhone" class="block text-sm font-medium text-gray-700">Street Address 2</label>
-      <input id="altPhone" type="text" formControlName="altPhone" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="street2" class="block text-sm font-medium text-gray-700">Street Address 2</label>
+      <input id="street2" type="text" formControlName="street2" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Street Address 2">
 
-      <label for="suretyCo" class="block text-sm font-medium text-gray-700">suretyCo</label>
-      <input id="suretyCo" type="text" formControlName="suretyCo" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+      <input id="city" type="text" formControlName="city" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="City">
 
-      <label for="bondAmount" class="block text-sm font-medium text-gray-700">bondAmount</label>
-      <input id="bondAmount" type="text" formControlName="bondAmount" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="state" class="block text-sm font-medium text-gray-700">State</label>
+      <input id="state" type="text" formControlName="state" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="State">
 
-      <label for="paymentTerms" class="block text-sm font-medium text-gray-700">paymentTerms Code</label>
-      <input id="paymentTerms" type="text" formControlName="paymentTerms" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="zip" class="block text-sm font-medium text-gray-700">Zip Code</label>
+      <input id="zip" type="text" formControlName="zip" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Zip Code">
 
-      <label for="creditLimit" class="block text-sm font-medium text-gray-700">Street Address 2</label>
-      <input id="creditLimit" type="text" formControlName="creditLimit" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="contact" class="block text-sm font-medium text-gray-700">Contact Person</label>
+      <input id="contact" type="text" formControlName="contact" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Contact Person">
 
-      <label for="paymentTerms" class="block text-sm font-medium text-gray-700">Telephone</label>
-      <input id="paymentTerms" type="text" formControlName="paymentTerms" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com" >
+      <label for="telNo" class="block text-sm font-medium text-gray-700">Telephone #</label>
+      <input id="telNo" type="text" formControlName="telNo" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Telephone #" >
 
-      <label for="creditLimit" class="block text-sm font-medium text-gray-700">Cell Phone</label>
-      <input id="creditLimit" type="text" formControlName="creditLimit" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="cellNo" class="block text-sm font-medium text-gray-700">Cell Phone #</label>
+      <input id="cellNo" type="text" formControlName="cellNo" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Cell Phone #">
 
-      <label for="paymentStatus" class="block text-sm font-medium text-gray-700">E Mail</label>
-      <input id="paymentStatus" type="paymentStatus" formControlName="paymentStatus" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+      <input id="email" type="email" formControlName="email" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Email">
 
     </div>
 
@@ -48,31 +48,28 @@
     <h2 class="text-2xl font-bold m-20 text-center">Shipping Address</h2>
 
     <label for="street1" class="block text-sm font-medium text-gray-700">Street Address</label>
-    <input id="street1" type="text" formControlName="street1" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+    <input id="street1" type="text" formControlName="street1" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Street Address">
 
-    <label for="altPhone" class="block text-sm font-medium text-gray-700">Street Address 2</label>
-    <input id="altPhone" type="text" formControlName="altPhone" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+    <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+      <input id="city" type="text" formControlName="city" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="City">
 
-    <label for="suretyCo" class="block text-sm font-medium text-gray-700">suretyCo</label>
-    <input id="suretyCo" type="text" formControlName="suretyCo" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="state" class="block text-sm font-medium text-gray-700">State</label>
+      <input id="state" type="text" formControlName="state" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="State">
 
-    <label for="bondAmount" class="block text-sm font-medium text-gray-700">bondAmount</label>
-    <input id="bondAmount" type="text" formControlName="bondAmount" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="zip" class="block text-sm font-medium text-gray-700">Zip Code</label>
+      <input id="zip" type="text" formControlName="zip" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Zip Code">
 
-    <label for="paymentTerms" class="block text-sm font-medium text-gray-700">paymentTerms Code</label>
-    <input id="paymentTerms" type="text" formControlName="paymentTerms" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="contact" class="block text-sm font-medium text-gray-700">Contact Person</label>
+      <input id="contact" type="text" formControlName="contact" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Contact Person">
 
-    <label for="creditLimit" class="block text-sm font-medium text-gray-700">Street Address 2</label>
-    <input id="creditLimit" type="text" formControlName="creditLimit" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="telNo" class="block text-sm font-medium text-gray-700">Telephone #</label>
+      <input id="telNo" type="text" formControlName="telNo" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Telephone #" >
 
-    <label for="paymentTerms" class="block text-sm font-medium text-gray-700">Telephone</label>
-    <input id="paymentTerms" type="text" formControlName="paymentTerms" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="cellNo" class="block text-sm font-medium text-gray-700">Cell Phone #</label>
+      <input id="cellNo" type="text" formControlName="cellNo" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Cell Phone #">
 
-    <label for="creditLimit" class="block text-sm font-medium text-gray-700">Cell Phone</label>
-    <input id="creditLimit" type="text" formControlName="creditLimit" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
-
-    <label for="paymentStatus" class="block text-sm font-medium text-gray-700">E Mail</label>
-    <input id="paymentStatus" type="paymentStatus" formControlName="paymentStatus" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="you@example.com">
+      <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+      <input id="email" type="email" formControlName="email" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Email">
 
   </div>
 
@@ -80,11 +77,11 @@
 
 <div class=" m-8 p-12 bg-red-200 border border-gray-400">
   <h2 class="text-2xl font-bold m-20 text-center">Other Information</h2>
-<div class="grid grid-cols-2 gap-2" formGroupName="otherInfo">
+  <div class="grid grid-cols-2 gap-2" formGroupName="otherInfo">
 
     <mat-form-field class="full-width"  appearance="outline">
-      <mat-label for="secondCtc" class="text-black">Secondary creditLimit</mat-label>
-      <input matInput id="secondCtc" type="text" formControlName="secondCtc" class="sm:text-sm" placeholder="Street Address">
+      <mat-label for="secondCtc" class="text-black">Secondary Contact</mat-label>
+      <input matInput id="secondCtc" type="text" formControlName="secondCtc" class="sm:text-sm" placeholder="Secondary Contact">
     </mat-form-field>
 
     <mat-form-field class="full-width"  appearance="outline">
@@ -114,19 +111,10 @@
   </mat-form-field>
 
   <mat-form-field class="full-width"  appearance="outline">
-    <mat-label for="paymentTerms" class="text-black">payment Terms</mat-label>
-    <input matInput id="paymentTerms" type="text" formControlName="paymentTerms" class="block w-full  sm:text-sm" placeholder="Payment Terms" >
-  </mat-form-field>
-
-  <mat-form-field class="full-width"  appearance="outline">
-    <mat-label for="creditLimit" class="text-black">Credit Limit</mat-label>
-    <input matInput id="creditLimit" type="text" formControlName="creditLimit" class="block w-full  sm:text-sm" placeholder="credit Limit">
-  </mat-form-field>
-
-  <mat-form-field class="full-width"  appearance="outline">
     <mat-label for="paymentStatus" class="text-black">payment Status</mat-label>
     <input matInput id="paymentStatus" type="text" formControlName="paymentStatus" class="block w-full  sm:text-sm" placeholder="payment Status">
   </mat-form-field>
+
 
   <mat-form-field class="full-width"  appearance="outline">
     <mat-label for="trucker" class="text-black">Trucker</mat-label>

@@ -40,7 +40,7 @@ export class FlexFormComponent {
       bondAmount: [''],
       paymentTerms: [''],
       creditLimit:[''],
-      paymentStauts: [''],
+      paymentStatus: [''],
       payorUnitNo: [''],
       trucker: [''],
       truckerTel: [''],

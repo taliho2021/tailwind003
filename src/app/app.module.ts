@@ -6,6 +6,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { DashComponent } from './dash/dash.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { FlexFormComponent } from './flex-form/flex-form.component';
+import { GridFormComponent } from './grid-form/grid-form.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
@@ -26,8 +28,6 @@ import { PicturesComponent } from './pictures/pictures.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Tailwind01Component } from './tailwind01/tailwind01.component';
 import { Tailwind02Component } from './tailwind02/tailwind02.component';
-import { FlexFormComponent } from './flex-form/flex-form.component';
-import { GridFormComponent } from './grid-form/grid-form.component';
 
 @NgModule({
   declarations: [
@@ -47,21 +47,20 @@ import { GridFormComponent } from './grid-form/grid-form.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatButtonModule,
-    MatSelectModule,
-    MatRadioModule,
-    MatCardModule,
     ReactiveFormsModule,
     LayoutModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatGridListModule,
-    MatMenuModule,
+    MatButtonModule,
+    MatCardModule,
     MatFormFieldModule,
+    MatGridListModule,
     MatIconModule,
+    MatInputModule,
+    MatMenuModule,
+    MatSelectModule,
+    MatListModule,
+    MatSidenavModule,
+    MatRadioModule,
+    MatToolbarModule,
     DragDropModule
   ],
   providers: [],
