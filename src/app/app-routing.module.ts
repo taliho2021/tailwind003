@@ -13,6 +13,7 @@ import { Tailwind01Component } from './tailwind01/tailwind01.component';
 import { Tailwind02Component } from './tailwind02/tailwind02.component';
 import { Child01Component } from './child01/child01.component';
 import { AiGridComponent } from './ai-grid/ai-grid.component';
+import { FlexGridComponent } from './flex-grid/flex-grid.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -32,7 +33,8 @@ const routes: Routes = [
   {path: 'pictures', component: PicturesComponent},
   {path: 'flex', component: FlexFormComponent},
   {path: 'grid', component: GridFormComponent},
-  {path: 'ai-grid', component: AiGridComponent}
+  {path: 'ai-grid', component: AiGridComponent},
+  {path: 'flex-grid', component: FlexGridComponent}
 ]
 
 @NgModule({

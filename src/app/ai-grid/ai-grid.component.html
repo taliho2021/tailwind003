@@ -2,35 +2,37 @@
 
 <form
   [formGroup]="clientForm"
-  class="container bg-slate-300 grid grid-cols-3 md:grid-cols-3 gap-4"
+  class="container bg-slate-300 grid grid-cols-3 flex-row md:grid-cols-3 gap-4"
 >
-  <div class="md:col-span-1">
-    <mat-form-field appearance="outline">
+  <div
+    class="m-8 p-12 bg-rose-100 border border-gray-400 md:col-span-1"
+  >
+    <h2 class="text-2xl font-bold m-20 text-center">Client</h2>
+    <mat-form-field appearance="outline" required>
       <mat-label>Client Code</mat-label>
       <input matInput formControlName="clientCode" type="text" />
     </mat-form-field>
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" required>
       <mat-label>Client Name</mat-label>
       <input matInput formControlName="clientName" type="text" />
     </mat-form-field>
   </div>
 
-  <h2 class="text-2xl font-bold m-20 text-center">Addresses</h2>
-  <div class="md:col-span-1">
-    <mat-form-field appearance="outline">
+  <div class="m-8 p-12 bg-slate-200 border border-gray-400 md:col-span-1">
+    <h2 class="text-2xl font-bold m-20 text-center">Addresses</h2>
+    <mat-form-field appearance="outline" required>
       <mat-label>Mail Street 1</mat-label>
       <input matInput formControlName="addressMail.street1" type="text" />
     </mat-form-field>
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" required>
       <mat-label>Mail Street 2</mat-label>
       <input matInput formControlName="addressMail.street2" type="text" />
     </mat-form-field>
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" required>
       <mat-label>Mail City</mat-label>
       <input matInput formControlName="addressMail.city" type="text" />
     </mat-form-field>
-  </div>
-  <div class="md:col-span-1">
+
     <mat-form-field appearance="outline">
       <mat-label>Mail State</mat-label>
       <input matInput formControlName="addressMail.state" type="text" />
@@ -44,7 +46,9 @@
       <input matInput formControlName="addressMail.contact" type="text" />
     </mat-form-field>
   </div>
-  <div class="md:col-span-1">
+
+  <div class="m-8 p-12 bg-red-200 border border-gray-400 md:col-span-1">
+    <h2 class="text-2xl font-bold m-20 text-center">Shipping Address</h2>
     <mat-form-field appearance="outline">
       <mat-label>Mail Telephone</mat-label>
       <input matInput formControlName="addressMail.telNo" type="text" />
@@ -57,10 +61,7 @@
       <mat-label>Mail Email</mat-label>
       <input matInput formControlName="addressMail.email" type="text" />
     </mat-form-field>
-  </div>
 
-  <h2 class="text-2xl font-bold m-20 text-center">Shipping Address</h2>
-  <div class="md:col-span-1">
     <mat-form-field appearance="outline">
       <mat-label>Ship Street 1</mat-label>
       <input matInput formControlName="addressShip.street1" type="text" />
@@ -73,8 +74,6 @@
       <mat-label>Ship City</mat-label>
       <input matInput formControlName="addressShip.city" type="text" />
     </mat-form-field>
-  </div>
-  <div class="md:col-span-1">
     <mat-form-field appearance="outline">
       <mat-label>Ship State</mat-label>
       <input matInput formControlName="addressShip.state" type="text" />
@@ -87,8 +86,6 @@
       <mat-label>Ship Contact</mat-label>
       <input matInput formControlName="addressShip.contact" type="text" />
     </mat-form-field>
-  </div>
-  <div class="md:col-span-1">
     <mat-form-field appearance="outline">
       <mat-label>Ship Telephone</mat-label>
       <input matInput formControlName="addressShip.telNo" type="text" />
@@ -103,8 +100,8 @@
     </mat-form-field>
   </div>
 
-  <h2 class="text-2xl font-bold m-20 text-center">Other Information</h2>
-  <div class="md:col-span-1">
+  <div class="m-8 p-12 bg-rose-100 border border-gray-400 md:col-span-1">
+    <h2 class="text-2xl font-bold m-20 text-center">Other Information</h2>
     <mat-form-field appearance="outline">
       <mat-label>Second Contact</mat-label>
       <input matInput formControlName="otherInfo.secondCtc" type="text" />
@@ -133,8 +130,7 @@
       <mat-label>Payment Status</mat-label>
       <input matInput formControlName="otherInfo.paymentStatus" type="text" />
     </mat-form-field>
-  </div>
-  <div class="md:col-span-1">
+
     <mat-form-field appearance="outline">
       <mat-label>Payor Unit No</mat-label>
       <input matInput formControlName="otherInfo.payorUnitNo" type="text" />

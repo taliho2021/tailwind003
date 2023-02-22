@@ -31,6 +31,8 @@ import { NgModule } from '@angular/core';
 import { PicturesComponent } from './pictures/pictures.component';
 import { Tailwind01Component } from './tailwind01/tailwind01.component';
 import { Tailwind02Component } from './tailwind02/tailwind02.component';
+import { FlexGridComponent } from './flex-grid/flex-grid.component';
+import { SubGridComponent } from './sub-grid/sub-grid.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { Tailwind02Component } from './tailwind02/tailwind02.component';
     FlexFormComponent,
     GridFormComponent,
     Child01Component,
-    AiGridComponent
+    AiGridComponent,
+    FlexGridComponent,
+    SubGridComponent
   ],
   imports: [
     BrowserModule,

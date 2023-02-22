@@ -388,4 +388,168 @@
       </mat-form-field>
     </div>
   </div>
+
+  <div class="m-8 p-12 bg-red-200 border border-gray-400">
+    <h2 class="text-2xl font-bold m-20 text-center">Other Information</h2>
+    <div class="grid grid-cols-2 gap-2" formGroupName="otherInfo">
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label for="secondCtc" class="text-black"
+          >Secondary Contact</mat-label
+        >
+        <input
+          matInput
+          id="secondCtc"
+          type="text"
+          formControlName="secondCtc"
+          class="sm:text-sm"
+          placeholder="Secondary Contact"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label for="altPhone" class="text-black"
+          >Alternate Phone Number</mat-label
+        >
+        <input
+          matInput
+          id="altPhone"
+          type="text"
+          formControlName="altPhone"
+          class="block w-full sm:text-sm"
+          placeholder="Alternate Phone Number"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label for="suretyCo" class="text-black">Surety Company</mat-label>
+        <input
+          matInput
+          id="suretyCo"
+          type="text"
+          formControlName="suretyCo"
+          class="block w-full sm:text-sm"
+          placeholder="Surety Co"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label for="bondAmount" class="text-black">bond Amount</mat-label>
+        <input
+          matInput
+          id="bondAmount"
+          type="text"
+          formControlName="bondAmount"
+          class="block w-full sm:text-sm"
+          placeholder="bond Amount"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label for="paymentTerms" class="text-black"
+          >payment Terms</mat-label
+        >
+        <input
+          matInput
+          id="paymentTerms"
+          type="text"
+          formControlName="paymentTerms"
+          class="block w-full sm:text-sm"
+          placeholder="payment Terms"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label for="creditLimit" class="text-black">credit Limit</mat-label>
+        <input
+          matInput
+          id="creditLimit"
+          type="text"
+          formControlName="creditLimit"
+          class="block w-full sm:text-sm"
+          placeholder="credit Limit"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label for="paymentStatus" class="text-black"
+          >payment Status</mat-label
+        >
+        <input
+          matInput
+          id="paymentStatus"
+          type="text"
+          formControlName="paymentStatus"
+          class="block w-full sm:text-sm"
+          placeholder="payment Status"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label for="trucker" class="text-black">Trucker</mat-label>
+        <input
+          matInput
+          id="trucker"
+          type="text"
+          formControlName="trucker"
+          class="block w-full sm:text-sm"
+          placeholder="Trucker"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label for="truckerTel" class="text-black"
+          >Trucker Tel. #</mat-label
+        >
+        <input
+          matInput
+          id="truckerTel"
+          type="text"
+          formControlName="truckerTel"
+          class="block w-full sm:text-sm"
+          placeholder="Trucker Tel #"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label for="truckerCtc" class="text-black"
+          >Trucker Contact</mat-label
+        >
+        <input
+          matInput
+          id="truckerCtc"
+          type="text"
+          formControlName="truckerCtc"
+          class="block w-full sm:text-sm"
+          placeholder="Trucker Contact"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label for="salesMan" class="text-black"
+          >Person in charge</mat-label
+        >
+        <input
+          matInput
+          id="salesMan"
+          type="text"
+          formControlName="salesMan"
+          class="block w-full sm:text-sm"
+          placeholder="Person in charge"
+        />
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label for="ctpatStatus" class="text-black">CTPAT Status</mat-label>
+        <input
+          matInput
+          id="ctpatStatus"
+          type="text"
+          formControlName="ctpatStatus"
+          class="block w-full sm:text-sm"
+          placeholder="CTPAT Status"
+        />
+      </mat-form-field>
+    </div>
+  </div>
+
 </form>

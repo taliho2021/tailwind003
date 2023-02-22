@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-flex-form',
   templateUrl: './flex-form.component.html',
-  styleUrls: ['./flex-form.component.scss']
+  styleUrls: ['./flex-form.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class FlexFormComponent {
   clientForm = this.fb.group({
