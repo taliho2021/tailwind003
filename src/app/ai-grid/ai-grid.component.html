@@ -1,6 +1,9 @@
 <h1 class="text-3xl font-bold m-20 text-center">AI Flex Forms</h1>
 
-<form [formGroup]="clientForm" class="container bg-slate-300 grid grid-cols-1 md:grid-cols-3 gap-4">
+<form
+  [formGroup]="clientForm"
+  class="container bg-slate-300 grid grid-cols-3 md:grid-cols-3 gap-4"
+>
   <div class="md:col-span-1">
     <mat-form-field appearance="outline">
       <mat-label>Client Code</mat-label>
@@ -11,6 +14,8 @@
       <input matInput formControlName="clientName" type="text" />
     </mat-form-field>
   </div>
+
+  <h2 class="text-2xl font-bold m-20 text-center">Addresses</h2>
   <div class="md:col-span-1">
     <mat-form-field appearance="outline">
       <mat-label>Mail Street 1</mat-label>
@@ -53,6 +58,8 @@
       <input matInput formControlName="addressMail.email" type="text" />
     </mat-form-field>
   </div>
+
+  <h2 class="text-2xl font-bold m-20 text-center">Shipping Address</h2>
   <div class="md:col-span-1">
     <mat-form-field appearance="outline">
       <mat-label>Ship Street 1</mat-label>
@@ -95,6 +102,8 @@
       <input matInput formControlName="addressShip.email" type="text" />
     </mat-form-field>
   </div>
+
+  <h2 class="text-2xl font-bold m-20 text-center">Other Information</h2>
   <div class="md:col-span-1">
     <mat-form-field appearance="outline">
       <mat-label>Second Contact</mat-label>

@@ -1,8 +1,12 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { AddressComponent } from './address/address.component';
+import { AiGridComponent } from './ai-grid/ai-grid.component';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { Child01Component } from './child01/child01.component';
 import { DashComponent } from './dash/dash.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -25,11 +29,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavComponent } from './nav/nav.component';
 import { NgModule } from '@angular/core';
 import { PicturesComponent } from './pictures/pictures.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { Tailwind01Component } from './tailwind01/tailwind01.component';
 import { Tailwind02Component } from './tailwind02/tailwind02.component';
-import { Child01Component } from './child01/child01.component';
-import { AiGridComponent } from './ai-grid/ai-grid.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { AiGridComponent } from './ai-grid/ai-grid.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     ReactiveFormsModule,
     LayoutModule,
     MatButtonModule,
