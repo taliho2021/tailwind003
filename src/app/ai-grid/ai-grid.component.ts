@@ -1,5 +1,6 @@
+import { FormBuilder, Validators } from '@angular/forms';
+
 import { Component } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-ai-grid',
@@ -8,18 +9,18 @@ import { FormBuilder } from '@angular/forms';
 })
 export class AiGridComponent {
 clientForm = this.fb.group({
-    clientCode: [''],
+    clientCode: ['', Validators.required],
     clientName: [''],
     addressMail: this.fb.group({
-      street1: [''],
+      street1: ['', Validators.required],
       street2: [''],
-      city: [''],
-      state:[''],
-      zip: [''],
-      contact:[''],
-      telNo: [''],
-      cellNo:[''],
-      email: [''],
+      city: ['', Validators.required],
+      state:['', Validators.required],
+      zip: ['', Validators.required],
+      contact:['', Validators.required],
+      telNo: ['', Validators.required],
+      cellNo:['', Validators.required],
+      email: ['', Validators.required],
     }),
     addressShip: this.fb.group({
       street1: [''],

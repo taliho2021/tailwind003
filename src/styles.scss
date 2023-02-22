@@ -18,6 +18,9 @@ body {
 /*Added below styles extracted from the browser's developer tools
 to delete vertial line appearing inside the outline formfield  */
 
-*, ::before, ::after {
-  border:none;
+*,
+::before,
+::after {
+  border: none;
 }
+
