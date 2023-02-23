@@ -3,7 +3,7 @@
 </h1>
 <div class="container">
   <h1 class="text-3xl text-red-400 font-bold m-20 text-center">Flex Forms</h1>
-  <div class="flex flex-row">
+  <div class="flex flex-row m-4">
     <div class="basis-1/4 border-double border-indigo-600">
       Div with 1/4 basis
     </div>
@@ -27,10 +27,9 @@
     </div>
   </div>
   <br />
-  <br />
 
   <div class="flex flex-col">
-    <div class="border-solid border-yellow-400">
+    <div class="border-solid border-yellow-400 m-4">
       <div class="flex flex-row">
         <div class="basis-1/4 border-double border-indigo-600">
           Div with 1/4 basis
@@ -43,7 +42,7 @@
         </div>
       </div>
     </div>
-    <div class="border-solid border-yellow-500">
+    <div class="border-solid border-yellow-500 m-4">
       <div class="flex flex-row">
         <div class="basis-1/6 border-double border-indigo-600">
           Div with 1/6 basis
@@ -65,21 +64,23 @@
         </div>
       </div>
     </div>
-    <div class="border-solid border-yellow-700">Div 03 Column</div>
+    <div class="border-solid border-yellow-700 m-4">Div 03 Column</div>
   </div>
 </div>
 
-<br /><br /><br />
+<br />
+<!-- Grid forms below. Started with 4 cols and 16 divs of all same width  -->
+
 <div class="container">
   <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
     Grid Forms
   </h1>
-  <div class="grid grid-cols-4 gap-4">
-    <div class="bg-slate-400">
+  <div class="grid grid-cols-4 grid-rows-6 gap-4">
+    <div class="bg-slate-400 col-span-2 row-span-2 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 01
       </h1>
-      <form [formGroup]="clientForm" (ngSubmit)="onSubmit()">
+      <form [formGroup]="clientForm" (ngSubmit)="onSubmit()" >
         <h2 class="text-2xl font-bold m-20 text-center">Client</h2>
         <label for="clientCode" class="block text-sm font-medium text-gray-700"
           >Client Code</label
@@ -197,91 +198,91 @@
       </form>
     </div>
 
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-slate-300 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 02
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-red-200 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 03
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-green-300 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 04
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-teal-300 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 05
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 col-span-2 bg-cyan-200 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 06
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-yellow-200 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 07
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 col-span-2 bg-teal-200 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 08
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-cyan-200 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 09
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-yellow-200 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 10
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-teal-200 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 11
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-cyan-200 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 12
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-yellow-200 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 13
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-teal-200 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 14
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-cyan-300 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 15
       </h1>
       <app-sub-grid></app-sub-grid>
     </div>
-    <div class="border-dotted border-blue-800">
+    <div class="border-dotted border-blue-800 bg-yellow-300 m-4">
       <h1 class="text-3xl text-purple-500 font-bold m-20 text-center">
         Div 16
       </h1>
